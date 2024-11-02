@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
 
 
 import pandas as pd
@@ -16,10 +12,7 @@ data = data.dropna(subset=['tpep_pickup_datetime', 'tpep_dropoff_datetime'])
 
 
 
-# In[ ]:
 
-
-# Remove rows where fare_amount or trip_distance is zero or negative
 data = data[(data['fare_amount'] > 0) & (data['trip_distance'] > 0)]
 
 
@@ -102,31 +95,6 @@ print("R-squared (Best Model):", r2_best)
 
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
