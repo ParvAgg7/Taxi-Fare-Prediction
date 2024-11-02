@@ -1,7 +1,7 @@
 
 
 import pandas as pd
-data = pd.read_csv('data101.csv')
+data = pd.read_csv('data.csv')
 
 # Convert pickup and dropoff times to datetime
 data['tpep_pickup_datetime'] = pd.to_datetime(data['tpep_pickup_datetime'], errors='coerce')
